@@ -1,4 +1,4 @@
-vowels = set('аеиоуыэюя')
+vowels = set('аеиоуыэюяАЕИОУЫЭЮЯ')
 line = input('Введите фразу на русском: ')
 words = line.split(' ')
 brick = ''
@@ -12,4 +12,6 @@ for word in words:
             k += 2
     brick = brick + ' ' + bword
 print(brick)
+
+
 
