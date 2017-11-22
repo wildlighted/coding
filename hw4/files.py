@@ -12,3 +12,5 @@ for line in text:
 percentage = k/lentext*100
 answer = 'В этом файле ' + str(percentage) + '% слов не оканчиваются точкой или запятой.'
 print(answer)
+
+#вариант 4
