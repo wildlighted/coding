@@ -1,3 +1,4 @@
+#вариант 4
 import random
 
 def tokenizefile(fname):
