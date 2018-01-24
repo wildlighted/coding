@@ -41,11 +41,11 @@ def main():
         if i % 2 == 0:
             variant = random.randint(1, 2)
             if variant == 1:
-                print(verbs_1() + ' ' + 'die' + ' ' + nouns_1())
+                print(verbs_1() + ' ' + 'die' + ' ' + nouns_1() + punct())
             else:
                 verb_2 = verbs_2()
                 verb = verb_2.split(' ')
-                print(verb[0] + ' ' + nouns_2() + ' ' + verb[1])
+                print(verb[0] + ' ' + nouns_2() + ' ' + verb[1] + punct())
         else:
             print(links() + ', ' + adjectives() + ' ' + nouns_1() + punct())
 
