@@ -9,10 +9,10 @@ def openfile(): # функция открывает файл с именем, к
             text = f.read()
     return text
 
-def formcount(list): # функция подсчитывает количество форм на -ed и -ied в разделенном на "слова" без знаков препинания тексте, возвращает список из этих двух значений в соответствующем порядке
+def formcount(elements): # функция подсчитывает количество форм на -ed и -ied в разделенном на "слова" без знаков препинания тексте, возвращает список из этих двух значений в соответствующем порядке
     count_ed = 0
     count_ied = 0
-    for element in list:
+    for element in elements:
         clear = element.strip('!?-:;.,')
         if clear.endswith('ed'):
             count_ed += 1
