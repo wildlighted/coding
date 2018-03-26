@@ -19,13 +19,13 @@ def search_verb(text):
     return results
 
 def remove_repetition(res):
-    list = []
+    final = []
     for word in res:
         word = word.strip()
         word = word.strip(',.?!:;"')
-        if word not in list:
-            list.append(word)
-    return list
+        if word not in final:
+            final.append(word)
+    return final
 
 def main():
     text = read_file('text.txt')
