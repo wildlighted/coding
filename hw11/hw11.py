@@ -13,7 +13,7 @@ def write_answer(answer):
 
 def substitute(text):
     substituted = re.sub('Филос(о.?)фи(?=[а-я]+)', r'Астрол\1ги', text) #группа для учета символа о с ударением (которое на википедии доп.символ после буквы)
-    substituted = re.sub('филос(о.?)фи(?=[а-я]+)', r'Астрол\1ги', text)
+    substituted = re.sub('филос(о.?)фи(?=[а-я]+)', r'Астрол\1ги', substituted)
     substituted = re.sub('ФИЛОС(О.?)ФИ(?=[А-Я]+)', r'АСТРОЛ\1ГИ', substituted)
     return substituted
 
