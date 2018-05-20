@@ -1,3 +1,4 @@
+#вариант 4
 import os
 
 def countnames():
