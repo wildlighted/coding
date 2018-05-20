@@ -8,7 +8,7 @@ def countnames():
         if filename[0].lower() in symcount.keys():
             symcount[filename[0].lower()] += 1
         else:
-            symcount[filename[0].lower()] = 0
+            symcount[filename[0].lower()] = 1
     return symcount
 
 def main():
